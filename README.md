@@ -13,7 +13,7 @@ This project aims to automate the identification of potential clinical trial par
 
 Clone the repository:
 
-git clone https://github.com/yourgithubusername/clinical-trial-recruitment.git
+git clone https://github.com/sukanyanag/Turmerik-ML-Task.git
 
 Run the notebook
 
