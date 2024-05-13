@@ -27,8 +27,26 @@ This notebook installs all necessary libraries directly within the notebook.
 ### Sentiment Analysis
 - Sentiments are analyzed using the Hugging Face `transformers` library, identifying user sentiments towards clinical trials.
 
+After performing sentiment analysis on the collected Reddit posts and comments, further text processing steps were applied to prepare the data for more detailed analysis and to inform the message generation process.
+
+### Text Cleaning and Preparation
+
+**Stop Word Removal:**
+- To focus on the most meaningful words, common stop words (e.g., 'the', 'is', 'at') were removed from the text. This step was crucial to eliminate noise and emphasize key thematic elements relevant to clinical trials.
+
+**Lemmatisation:**
+- Lemmatization was applied to the words in the text to consolidate different forms of a word into a single, base form. This helped in standardizing the text data and improved the accuracy of the word frequency analysis that followed.
+
+### Word Cloud Generation by Emotion
+
+Using the cleaned and lemmatized text, word clouds were generated for each identified emotion category from the sentiment analysis. These word clouds visually represented the most frequent and significant words associated with each sentiment, providing insights into common themes and concerns:
+
 ### Message Generation
-- Based on the sentiment analysis results, personalized messages are generated using the GPT-2 model to engage potential participants.
+
+**Message Customization:**
+- The insights gained from the word clouds were utilized to tailor messages aimed at engaging users according to their expressed emotions and the prevalent themes. This approach ensured that the generated messages were not only personalized but also contextually relevant to the users' sentiments about clinical trials.
+
+- Based on the sentiment analysis results and the insights gained from the word clouds, personalized messages are generated according to their expressed emotions and the prevalent themes, using the GPT-2 model to engage potential participants.
 
 ## Challenges Faced
 - Handling rate limits and data scraping restrictions from Reddit.
